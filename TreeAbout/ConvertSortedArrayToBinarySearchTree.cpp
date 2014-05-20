@@ -12,6 +12,7 @@ public:
 		int n = num.size();
 		return partition(num,0,n-1);
 	}
+private:
 	TreeNode *partition(vector<int> &num, int start, int end) {
 		if(start > end) return NULL;
 		int mid = (start+end)/2;
